@@ -1,4 +1,6 @@
 type RootQuery {
   Elections: [ Election ]!
-  Election(uuid: String): Election!
+  Election(uuid: String!): Election!
+
+  State(uuid: String!): State!
 }
