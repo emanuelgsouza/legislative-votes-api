@@ -8,6 +8,7 @@ type State {
   sigla: String
   deleted: Boolean!
   deleted_date: Timestamp
+  election_quotient: Int!
 
   coligations: [ Coligation ]
 }

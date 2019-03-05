@@ -9,6 +9,9 @@ type Party {
   state_sigla: String
   coligation_uuid: String
   sigla: String
+  candidates: Int!
+  elect_qty: Int!
+  suplent_qty: Int!
   deleted: Boolean!
   deleted_date: Timestamp
 

@@ -7,6 +7,7 @@ type Delegate {
   number: String!
   party_uuid: String!
   status: String
+  sigla_party: String
   state_sigla: String
   party_composition: String
   party_composition_name: String

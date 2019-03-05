@@ -4,6 +4,10 @@ type Coligation {
   composition: String!
   year: Int!
   state_uuid: String
+  isolated_party: Boolean!
+  candidates: Int!
+  elect_qty: Int!
+  suplent_qty: Int!
   deleted: Boolean!
   deleted_date: Timestamp
 
