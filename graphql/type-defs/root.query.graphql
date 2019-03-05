@@ -3,4 +3,7 @@ type RootQuery {
   Election(uuid: String!): Election!
 
   State(uuid: String!): State!
+  Coligation(uuid: String!): Coligation!
+  Party(uuid: String!): Party!
+  Delegate(uuid: String!): Delegate!
 }

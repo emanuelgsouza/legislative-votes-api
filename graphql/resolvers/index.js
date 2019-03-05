@@ -4,12 +4,14 @@ const elections = require('./elections')
 const states = require('./states')
 const coligations = require('./coligations')
 const parties = require('./parties')
+const delegates = require('./delegates')
 
 const resolvers = [
   elections,
   states,
   coligations,
-  parties
+  parties,
+  delegates
 ]
 
 module.exports = defaultsDeep(RootQuery, ...resolvers)
