@@ -4,5 +4,24 @@
   "main": "index.js",
   "repository": "https://github.com/emanuelgsouza/legislative-votes-api.git",
   "author": "Emanuel Souza <emanuelgdesouza@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "DEVELOPMENT=true nodemon app.js",
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "fastify": "^2.0.0",
+    "fastify-gql": "^1.0.0",
+    "fastify-knexjs": "^1.0.14",
+    "fastify-register-routes": "^1.1.2",
+    "graphql-tools": "^4.0.4",
+    "lodash": "^4.17.11",
+    "pg": "^7.8.1",
+    "pino-pretty": "^2.5.0",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
 }

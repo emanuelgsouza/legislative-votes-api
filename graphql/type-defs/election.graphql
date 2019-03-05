@@ -1,0 +1,6 @@
+type Election {
+  uuid: String!
+  year: Int!
+  deleted: Boolean!
+  deleted_date: Timestamp
+}
