@@ -4,7 +4,10 @@ type State {
   votes: Int!
   chars: Int!
   year: Int!
+  election_uuid: String
   sigla: String
   deleted: Boolean!
   deleted_date: Timestamp
+
+  coligations: [ Coligation ]
 }

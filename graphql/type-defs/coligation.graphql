@@ -1,0 +1,11 @@
+type Coligation {
+  uuid: String!
+  name: String!
+  composition: String!
+  year: Int!
+  state_uuid: String
+  deleted: Boolean!
+  deleted_date: Timestamp
+
+  parties: [ Party ]
+}

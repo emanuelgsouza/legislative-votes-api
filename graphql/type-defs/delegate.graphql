@@ -1,0 +1,17 @@
+type Delegate {
+  uuid: String!
+  name: String!
+  urne_name: String!
+  votes: Int!
+  is_pulling: Boolean!
+  number: String!
+  party_uuid: String!
+  status: String
+  state_sigla: String
+  party_composition: String
+  party_composition_name: String
+  deleted: Boolean!
+  deleted_date: Timestamp
+
+  # party: Party
+}

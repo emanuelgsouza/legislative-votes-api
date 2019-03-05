@@ -1,0 +1,16 @@
+type Party {
+  uuid: String!
+  name: String!
+  initials: String!
+  votes: Int!
+  year: Int!
+  number: String!
+  legend_votes: Int!
+  state_sigla: String
+  coligation_uuid: String
+  sigla: String
+  deleted: Boolean!
+  deleted_date: Timestamp
+
+  delegates: [ Delegate ]
+}
