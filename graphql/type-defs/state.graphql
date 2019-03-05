@@ -1,8 +1,10 @@
-type Election {
+type State {
   uuid: String!
+  name: String!
+  votes: Int!
+  chars: Int!
   year: Int!
+  sigla: String
   deleted: Boolean!
   deleted_date: Timestamp
-
-  states: [ State ]
 }

@@ -1,7 +1,7 @@
-const Elections = require('./elections')
+const { defaultsDeep } = require('lodash')
+const RootQuery = require('./root-query')
+const elections = require('./elections')
 
-module.exports = {
-  RootQuery: {
-    Elections
-  }
-}
+module.exports = defaultsDeep(RootQuery, {
+  ...elections
+})
