@@ -1,12 +1,9 @@
-const Elections = (root, args, { reply }) => reply.knex('tb_elections')
+const { find } = require('lodash')
+const electionsJson = require('../../../elections/elections.json')
 
-const Election = (_, { uuid }, { reply }) => {
-  const { knex } = reply
+const Elections = _ => electionsJson
 
-  return knex('tb_elections')
-    .where('uuid', uuid)
-    .first()
-}
+const Election = (_, { uuid }) => find(electionsJson, ['uuid', uuid])
 
 module.exports = {
   Election,

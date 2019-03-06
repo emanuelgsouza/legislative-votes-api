@@ -1,7 +1,9 @@
-const Coligation = (_, { uuid }, { reply }) => {
-  const { knex } = reply
+const { find } = require('lodash')
 
-  return knex('tb_coligations').where('uuid', uuid).first()
+const Coligation = (_, { uuid }, { reply }) => {
+  const { electionsData } = reply
+
+  return find(electionsData['coligactions'], ['uuid', uuid])
 }
 
 module.exports = {

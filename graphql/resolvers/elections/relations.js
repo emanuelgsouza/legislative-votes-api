@@ -1,8 +1,9 @@
-const states = ({ uuid }, _, { reply }) => {
-  const { knex } = reply
+const { filter } = require('lodash')
 
-  return knex('tb_states')
-    .where('election_uuid', uuid)
+const states = ({ uuid }, _, {  reply}) => {
+  const { electionsData } = reply
+
+  return filter(electionsData['states'], ['election_uuid', uuid])
 }
 
 module.exports = {
