@@ -1,4 +1,4 @@
-const serverConfig = require('../config/server')
+const serverConfig = require('../../config/server')
 const databasePlugin = require('../plugins/database')
 const graphqlPlugin = require('../plugins/graphql')
 const loadRoutesPlugin = require('../plugins/routes')

@@ -1,6 +1,6 @@
 const fastifyPlugin = require('fastify-plugin')
 // const knex = require('knex')
-// const options = require('../config/database')
+// const options = require('../../config/database')
 
 const electionsData = require('../elections/2018')
 
