@@ -13,6 +13,10 @@ type Delegate {
   party_composition_name: String
   deleted: Boolean!
   deleted_date: Timestamp
+}
 
-  # party: Party
+input DelegateFilter {
+  uuid: String
+  status: String
+  is_pulling: Boolean
 }

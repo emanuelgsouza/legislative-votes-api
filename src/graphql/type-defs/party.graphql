@@ -15,5 +15,5 @@ type Party {
   deleted: Boolean!
   deleted_date: Timestamp
 
-  delegates: [ Delegate ]
+  delegates (filter: DelegateFilter): [ Delegate ]
 }

@@ -1,9 +1,13 @@
 const { filter } = require('lodash')
+const { filterDelegates } = require('../delegates/lib/filter')
 
-const delegates = ({ uuid }, _, { reply }) => {
+const delegates = ({ uuid }, args, { reply }) => {
   const { electionsData } = reply
 
-  return filter(electionsData['delegates'], ['party_uuid', uuid])
+  return filterDelegates(
+    filter(electionsData['delegates'], ['party_uuid', uuid]),
+    args.filter || {}
+  )
 }
 
 module.exports = {
