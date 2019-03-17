@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  legislative-votes-service:
+    image: node:9.10-alpine
+    command: ['yarn', 'start']
+    volumes:
+      - type: bind
+        source: ./
+        target: /home/workspace
+    working_dir:  /home/workspace
+    ports:
+      - 3000:3000
