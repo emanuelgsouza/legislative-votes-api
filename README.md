@@ -12,12 +12,23 @@ Uma api para a aplicação dos votos do legislativo federal em 2018
 
 ## API em Graphql
 
-Em desenvolvimento
-
-Este repositório está licenciado sob a licença MIT
+Este projeto utiliza o Graphiql como um playground para os tipos e resolvers. É só subir a api e digitar: `<endereço>:<porta>/graphiql`
 
 ## Como subir a API?
 
-* Faça um clone do projeto, com `git clone`
+* Faça um clone do projeto, com `git clone https://github.com/emanuelgsouza/legislative-votes-api.git`
 * Instale as dependencias, com `yarn`
-* Execute o comando `yarn dev` para subir a API em modo de desenvolvimento
+* Execute o comando `docker-compose up` para subir o serviço Docker com a API em desenvolvimento
+
+## Projetos relacionados
+
+* Os arquivos JSONs dessa API foram gerados pelo [legislative-votes-parser](https://github.com/emanuelgsouza/legislative-votes-parser)
+* Há uma versão front-end em desenvolvimento, [legislative-votes-web](https://github.com/Guilherme2020/legislative-votes-web), não deixe de conferir
+
+## TODO
+
+* [ ] Testes na rota `/graphql`
+
+----
+
+Este repositório está licenciado sob a licença MIT
