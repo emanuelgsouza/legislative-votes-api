@@ -18,7 +18,7 @@ function fastifyKnexJS (fastify, opts, next) {
 const init = fastify => {
   const plugin = fastifyPlugin(fastifyKnexJS, '>=0.30.0')
   
-  fastify.register(plugin, {}, err => console.error(err))
+  return fastify.register(plugin, {}, err => console.error(err))
 }
 
 module.exports = init

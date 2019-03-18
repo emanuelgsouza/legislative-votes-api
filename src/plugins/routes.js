@@ -4,9 +4,9 @@ const registerRoutes = require('fastify-register-routes')
 const defaultPath = path.join(__dirname, '../routes')
 
 const init = fastify => {
-  fastify.register(registerRoutes, {
+  return fastify.register(registerRoutes, {
     regex: /((route)|(routes))\.js/,
-    showTable: true,
+    showTable: !(process.env.NODE_ENV === 'test'),
     path: defaultPath
   })
 }

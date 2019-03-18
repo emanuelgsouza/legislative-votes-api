@@ -4,7 +4,7 @@ const typeDefs = require('../graphql/type-defs')
 const resolvers = require('../graphql/resolvers')
 
 const init = fastify => {
-  fastify.register(GQL, {
+  return fastify.register(GQL, {
     schema: makeExecutableSchema({ typeDefs, resolvers }),
     graphiql: true
   })

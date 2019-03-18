@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "DEVELOPMENT=true nodemon app.js",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "test": "NODE_ENV=test ava"
   },
   "dependencies": {
     "dataloader": "^1.4.0",
@@ -21,9 +22,11 @@
     "lodash": "^4.17.11",
     "pg": "^7.8.1",
     "pino-pretty": "^2.5.0",
-    "ramda": "^0.26.1"
+    "ramda": "^0.26.1",
+    "shot": "^4.0.7"
   },
   "devDependencies": {
+    "ava": "^1.3.1",
     "nodemon": "^1.18.10"
   }
 }
